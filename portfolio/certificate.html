@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICATES</title>
+    <link rel="stylesheet" href="certificate.css">
+    <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+       >
+       <h1 class="main-name"><i>MY CERTIFICATES</i></h1>
+</head>
+<body>
+      <ul class="navlist">
+        <li><a href="index.html">Home </a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="images/CV.pdf" target="_blank">CV</a></li>
+        <li><a href="certificate.html" class="active">Certificates</a></li>
+      </ul>
+    <div class="full-img" id="fullimgBox">
+        <img src="images/frontend.jpg" id="fullimg">
+        <span onclick="closefullimg()">X</span>
+    </div>
+    <div class="CERTIFICATE-gallery">
+        <img src="images/frontend.jpg"onclick="openfullimg(this.src)">
+        <img src="images/honeywell.jpg" onclick="openfullimg(this.src)">
+        <img src="images/python.jpg" onclick="openfullimg(this.src)">
+        <img src="images/edvedha.jpg" onclick="openfullimg(this.src)">
+        <img src="images/dsa.jpg" onclick="openfullimg(this.src)">
+        <img src="images/oops.jpg" onclick="openfullimg(this.src)">
+    </div>
+
+
+
+<script>
+    var fullimgBox = document.getElementById("fullimgBox");
+    var fullimg = document.getElementById("fullimg");
+    function openfullimg(pic){
+        fullimgBox.style.display = "flex";
+        fullimg.src = pic;
+    }
+    function closefullimg(){
+        fullimgBox.style.display = "none";
+    }
+
+</script>
+
+</body>
+</html>
